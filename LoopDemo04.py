@@ -40,4 +40,4 @@ while len(word) < 6 or word.isalpha() == False:
 #If it is true, we go back to the top of the block and run it again
 print(word+" is a seriously long word!")
 
-
+#CAUTION: DO NOT USE WHILE LOOPS TO CONTROL INPUTS WITH GUI PROGRAMS
