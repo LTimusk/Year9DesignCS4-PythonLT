@@ -1,20 +1,31 @@
 #Imput 
 
 
-a = input("What is the first digit: ")
+a = input("")
 a = int(a)
 
-b = input("What is the second digit: ")
+b = input("")
 b = int(b)
 
-c = input("What is the third digit: ")
+c = input("")
 c = int(c)
 
-d= int(input("What is the fourth digit: "))
-
+d= int(input(""))
 
 
 #Process 
+
+if a == 8 or a ==  9:
+	if b == c:
+		if d == 8 or d == 9:
+			print("ignore")
+
+else:
+	print("answer")
+
+
+
+
 
 
 
