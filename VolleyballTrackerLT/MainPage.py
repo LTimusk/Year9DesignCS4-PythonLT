@@ -108,7 +108,7 @@ def setNamefnc():
 	#entUN.config(state = "disabled")
 	#print(setName["text"])
 	if setName["text"] == "Change Name":
-		setName.config(text = "Set Name")
+		setName.config(text = "Confirm Name")
 		entUN.config(state = "normal")
 	else:
 		setName.config(text = "Change Name")
@@ -194,11 +194,16 @@ def BigFont(*args):
 	p += 1 
 	if p%2==0:
 		entDATA.config(font = ("Helvetica", 20))
+		labUN.config(font = ("Helvetica", 20))
+		labFont.config(font = ("Helvetica", 20))
 		bigButton.config(text = "Smaller Font")
 
 	else: 
 		entDATA.config(font = ("Helvatica", 14))
 		bigButton.config(text = "Larger Font")
+		labUN.config(font = ("Helvatica", 14))
+		labFont.config(font = ("Helvatica", 14))
+		bigButton.config(font = ("Helvatica", 14))
 
 
 
@@ -234,8 +239,7 @@ checkVar.set(0)
 
 
 #************************* ALL OF MY WIDGITS *******************************
-
-
+ 
 
 labTITLE = tk.Label(window, text = "Serve Tracker", font =("Helvetica" "italics", 50))
 labTITLE.config(background = '#55BCC9')
@@ -270,7 +274,7 @@ labFont.grid(row = 1, column = 3)
 
 #________________________________________________________________________
 
-setName = tk.Button(window, text = "Set Name", command = setNamefnc)
+setName = tk.Button(window, text = "Confirm Name", command = setNamefnc)
 setName.grid(column = 0, row = 7, columnspan = 2, sticky = "NESW")
 
 #________________________________________________________________________
